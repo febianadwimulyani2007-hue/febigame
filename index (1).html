@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Baby Panda Masak-Masakan Jualan</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Baby Panda Masak-Masakan Jualan</h1>
+      <p>Ayo bantu Baby Panda memasak dan menjual makanan lezat!</p>
+    </header>
+
+    <section class="game-board">
+      <div class="panda-card">
+        <div class="panda-face">🐼</div>
+        <h2>Baby Panda</h2>
+        <p class="status">Status: <span id="statusText">Siap memasak</span></p>
+      </div>
+
+      <div class="counter-card">
+        <div>
+          <strong>Persediaan:</strong>
+          <ul>
+            <li>Sayur: <span id="ingredients-veggie">0</span></li>
+            <li>Nasi: <span id="ingredients-rice">0</span></li>
+            <li>Sate: <span id="ingredients-sate">0</span></li>
+          </ul>
+        </div>
+        <div>
+          <strong>Menu Masakan:</strong>
+          <ul>
+            <li>Nasi Goreng - 1 Nasi + 1 Sayur → Rp 5000</li>
+            <li>Sate Panda - 2 Sate → Rp 8000</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="action-panel">
+        <button id="btnCollect" class="action-btn">Kumpulkan Bahan</button>
+        <button id="btnCookRice" class="action-btn">Masak Nasi Goreng</button>
+        <button id="btnCookSate" class="action-btn">Masak Sate Panda</button>
+        <button id="btnSell" class="action-btn">Jual Menu</button>
+      </div>
+
+      <div class="score-card">
+        <p>Uang: <span id="money">0</span></p>
+        <p>Menu Terjual: <span id="soldCount">0</span></p>
+      </div>
+    </section>
+
+    <section class="message-box">
+      <h3>Pesan</h3>
+      <div id="messageLog" class="message-log">Ayo mulai dengan kumpulkan bahan!</div>
+    </section>
+  </div>
+
+  <script src="game.js"></script>
+</body>
+</html>
